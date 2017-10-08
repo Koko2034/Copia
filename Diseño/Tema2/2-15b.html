@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2.11</title>
+    <SCRIPT LANGUAGE="javascript">
+            Image1 = new Image(265,406)
+            Image1.src = "ep.gif"
+            
+            Image2 = new Image(265,406)
+            Image2.src = "ep2.gif"
+            
+            Image3 = new Image(265,406)
+            Image3.src = "ep3.gif" 
+            
+            </SCRIPT>
+    <SCRIPT LANGUAGE="javascript">
+            
+            function zoomin() {
+            document.emp.src = Image3.src; return true;
+            }
+            
+            function zoomout() {
+            document.emp.src = Image2.src; return true;
+            }
+            
+            function original() {
+            document.emp.src = Image1.src; return true; 
+            }
+            
+            </SCRIPT> 
+</head>
+<body>
+        <header></header>
+        <nav></nav>
+        <article><strong><h2>Menú</h2></strong>
+            <section>
+                    <IMG NAME="emp" SRC="ep.gif" USEMAP="#ep">
+                    <MAP NAME="ep">
+                            <AREA SHAPE="rect" ALT="Enlarged right side" COORDS="117,70,160,119" HREF="ep2.gif" onMouseOver="zoomout()" onMouseOut="original()">
+                            <AREA SHAPE="rect" ALT="Enlarged right side" COORDS="212,68,250,120" HREF="ep3.gif" onMouseOver="zoomin()" onMouseOut="original()">
+                            <AREA SHAPE="default" nohref>
+                            </MAP>
+                
+            </section>
+        </article>
+        <aside></aside>
+        <footer></footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+Sentencias condicionales
+1. (divisionporcero.html) Crea una página con el siguiente código y prueba su funcionamiento.
+¿Qué errores hay?
+var dividendo = prompt(“Introduce el dividendo: ”);
+var divisor = prompt(“Introduce el divisor: ”);
+var resultado;
+divisor != 0 ? resultado = dividendo/divisor : alert(“No es posible
+la división entre cero”);
+alert(“El resultado es: ” + resultado);
+2. (divisionporcero2.html) Basándote en el código anterior, crea una página en la que se
+sustituya el operador ?: por la sentencia condicional if y en la que no se produzca el
+mensaje erróneo con el resultado que aparece al introducir un 0 como divisor en el ejercicio
+anterior .
+3. (notas.html) Solicita tres notas de exámenes de un alumno, si la media es mayor o igual a
+cinco muestra el mensaje 'Promocionado' y dicha media, si no, muestra el mensaje ‘No
+promociona’. Ten en cuenta para obtener la media la precedencia de los operadores.
+4. (claves.html) Solicita que se ingrese dos veces una clave. Muestra un mensaje si son iguales
+y uno distinto si no lo son.
+5. (operaciones.html) Realiza un programa que lea por teclado dos números, si el primero es
+mayor al segundo informa de su suma y diferencia, en caso contrario informa del producto y
+la división del primero respecto al segundo.
+6. (mayor.html) Se deben solicitar la introducción por teclado tres números. Mostrar por
+pantalla el mayor de ellos.
+7. (dosdigitos.html) Se introduce por teclado un número positivo de uno o dos dígitos (1..99)
+muestra un mensaje indicando si el número tiene uno o dos dígitos (recordar de convertir a
+entero con parseInt para preguntar posteriormente por una variable entera).Tener en cuenta
+qué condición debe cumplirse para tener dos dígitos, un número entero.
+Estructuras condicionales anidadas
+8. (notas2.html) Solicita tres notas de exámenes de un alumno, si la media es mayor o igual a 7
+muestra el mensaje “Promocionado”, si es mayor o igual a 4 muestra el mensaje “Regular”,
+si es menor muestra el mensaje “No promociona”.
+9.
+(signo.html) Se introduce por teclado un valor entero, mostrar un mensaje que indique si el
+número es positivo, cero o negativo.
+10. (signo2.html) Se introduce por teclado un valor entero, mostrar un mensaje que indique si el
+número es positivo, cero o negativo, dar un mensaje de error si el valor introducido no es un
+número.11. (trescifras.html) Confeccionar un programa que permita cargar un número entero positivo
+de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, ó 3 cifras. Mostrar un
+mensaje de error si el número de cifras no es 1, 2 ó 3.
+12. (aspirante.html) De un aspirante a un empleo, que realizó un test de capacitación, se obtuvo
+la siguiente información: nombre del aspirante, cantidad total de preguntas que se le
+realizaron y cantidad de preguntas que contestó correctamente. Se pide confeccionar un
+programa que lea los datos del aspirante e informe el nivel del mismo según el porcentaje de
+respuestas correctas que ha obtenido, y sabiendo que:
+Nivel superior: Porcentaje>=90%.
+Nivel medio: Porcentaje>=75% y <90%.
+Nivel regular: Porcentaje>=50% y <75%.
+Fuera de nivel: Porcentaje<50%.
+Operadores lógicos && (y) en las estructuras condicionales.
+13. (navidad.html) Realiza un programa que pida cargar una fecha cualquiera, luego verificar si
+dicha fecha corresponde a Navidad.
+(Por ahora lo más fácil es que se pidan de forma separada el día, el mes y el año).
+14. (tresiguales.html) Se ingresan tres valores por teclado, si todos son iguales se imprime la
+suma del primero con el segundo y este resultado se multiplica por el tercero.
+15. (menoresdiez.html) Se ingresan por teclado tres números, si todos los valores ingresados
+son menores a 10, imprimir en la página el texto 'Todos los números son menores a diez'.
+16. (punto.html) Escribir un programa que pida ingresar la coordenada de un punto en el plano,
+es decir dos valores enteros x e y. Posteriormente imprimir en pantalla en qué cuadrante se
+ubica dicho punto. (1o Cuadrante si x > 0 Y y > 0 , 2o Cuadrante: x < 0 Y y > 0, 3 er
+Cuadrante: x < 0 Y y < 0, 4o en otro caso)
+17. (sueldo.html) De un operario se conoce su sueldo y los años de antigüedad. Se pide
+confeccionar un programa que lea los datos de entrada e informe:
+a) Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años, otorgarle
+un aumento del 20%, mostrar el sueldo a pagar.
+b) Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años, otorgarle un
+aumento de 5%.
+c) Si el sueldo es mayor o igual a 500 mostrar el sueldo en la página sin cambios.Estructura switch
+18. (calculadora.html) Pide al usuario que inserte dos números. Luego pide que indique una
+operación aritmética utilizando los signos +, -, * y /.
+Muestra en la página el resultado de la operación, con el siguiente formato, por ejemplo, en
+el caso de que hubiese sido una multiplicación:
+El producto de 4 y 6 es 24.
+Si el texto introducido para indicar la operación no coincide con ninguno de los esperados
+se debe dar un mensaje de alerta indicando que la operación no se puede efectuar y no se
+escribirá nada en la página.
+Nota: utiliza la sentencia switch
+19. (traductor.html) Solicitar el ingreso alguna de estas palabras (casa, mesa, perro, gato) luego
+mostrar la palabra traducida en inglés. Es decir, si se ingresa 'casa' debemos mostrar el texto
+'house' en la página. En el caso de que el texto introducido no coincida con ninguno del
+diccionario se dará un mensaje informando de este hecho.

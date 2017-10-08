@@ -1,0 +1,48 @@
+Unidad 2
+EJERCICIO 2.1: RESPUESTA DEL USUARIO
+Realizar un script que pregunte: ¿Está seguro de que quiere hacer esto?
+Si el usuario introduce texto se visualizará el mismo. En este caso el usuario
+introdujo “Sí”.
+Si pulsa Cancelar aparecerá el mensaje “Ha rehusado contestar”. 
+ 
+Nota:  
+1‐  Recuerda que cuando pulsamos Cancelar, el resultado que devuelve el prompt a la variable 
+es null. 
+2‐ Si una variable no está vacía, cuando hagamos un if devolverá true, si está vacía devolverá 
+false. Por ejemplo: 
+Var prueba=8 
+If (prueba) {alert (“la variable contiene algo”)} 
+Hacer if(prueba), sin poner ninguna condición más, es algo así como preguntar ¿hay algo en la 
+variable prueba? Como en este caso la variable contiene el número 8 se confirma que hay algo, 
+por lo tanto, la condición es true y el alert mostrará el mensaje. Si hubiese pasado lo siguiente: 
+var prueba=”” (cadena vacía) no se mostraría el mensaje. 
+  
+Unidad 2
+EJERCICIO 2.2: ¿FLOTA O SE HUNDE?
+Vamos a realizar un script que nos diga si un material flota o se hunde
+dependiendo de su densidad medida en gr/cm3.
+El script, como ayuda al usuario, mostrará ejemplos de distintas densidades y
+realizará la pregunta “¿Qué densidad tiene el material elegido?”:
+ 
+ 
+Si la densidad es menor de 1 el material flotará, si es mayor se hundirá,
+mostrando las siguientes alertas según sea el caso:
+ 
+  
+Unidad 2
+EJERCICIO 2.3: NOMBRE (ejercicio con errores)
+Intentamos realizar un ejercicio que nos pregunte cómo nos llamamos y
+muestre una alerta con el nombre. Como podemos ver, el ejercicio tiene
+algunos errores. Debes descubrirlos, comunicarlos al profesor mediante
+cometarios en el código y enviarlo al profesor corregido y funcionando
+adecuadamente.
+<HTML> 
+</HEAD> 
+<BODY> 
+<script type="text/javascript"> 
+var nombre="" 
+nombre=prompt("¿Cómo te llamas?";"") 
+alert "Te llamas "+nombre; 
+</SCRIPT> 
+</BODY> 
+</HTML> 

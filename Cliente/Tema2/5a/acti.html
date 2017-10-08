@@ -1,0 +1,90 @@
+<HTML>
+    <HEAD>
+    <TITLE>JavaScripted Static Table</TITLE>
+    <SCRIPT LANGUAGE="JavaScript">
+    // function becomes a method for each month object
+    function getFirstDay(theYear, theMonth){
+    var firstDate = new Date(theYear,theMonth,1)
+    return firstDate.getDay() + 1
+    }
+    // number of days in the month
+    function getMonthLen(theYear, theMonth) {
+    var oneDay = 1000 * 60 * 60 * 24
+    var thisMonth = new Date(theYear, theMonth, 1)
+    var nextMonth = new Date(theYear, theMonth + 1, 1)
+    var len = Math.ceil((nextMonth.getTime() -
+    thisMonth.getTime())/oneDay)
+    return len
+    }
+    // correct for Y2K anomalies
+    function getY2KYear(today) {
+    var yr = today.getYear()
+    return ((yr < 1900) ? yr+1900 : yr)
+    }
+    // create basic array
+
+    heMonths = new MakeArray(12)
+// load array with English month names
+function MakeArray(n) {
+this[0] = "January"
+this[1] = "February"
+this[2] = "March"
+this[3] = "April"
+this[4] = "May"
+this[5] = "June"
+this[6] = "July"
+this[7] = "August"
+this[8] = "September"
+this[9] = "October"
+this[10] = "November"
+this[11] = "December"
+this.length = n
+return this
+}
+// end -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>Month at a Glance (Static)</H1>
+<HR>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- start
+// initialize some variables for later
+
+var today = new Date()
+var theYear = getY2KYear(today)
+var theMonth = today.getMonth() // for index into our array
+// which is the first day of this month?
+var firstDay = getFirstDay(theYear, theMonth)
+// total number of <TD>...</TD> tags needed in for loop below
+var howMany = getMonthLen(theYear, theMonth) + firstDay
+// start assembling HTML for table
+var content = "<CENTER><TABLE BORDER>"
+// month and year display at top of calendar
+content += "<TR><TH COLSPAN=7>" + theMonths[theMonth] + " " + theYear + "</TH></TR>"
+// days of the week at head of each column
+content += "<TR><TH>Sun</TH><TH>Mon</TH><TH>Tue</TH><TH>Wed</TH>"
+content += "<TH>Thu</TH><TH>Fri</TH><TH>Sat</TH></TR>"
+content += "<TR>"
+// populate calendar
+for (var i = 1; i < howMany; i++) {
+if (i < firstDay) {
+// ‘empty’ boxes prior to first day
+content += "<TD></TD>"
+} else {
+// enter date number
+content += "<TD ALIGN=’center’>" + (i - firstDay + 1) + "</TD>"
+}
+// start new row after each week
+if (i % 7 == 0 && i != howMany) {
+content += "</TR><TR>"
+
+}
+}
+content += "</TABLE></CENTER>"
+// blast entire table’s HTML to the document
+document.write(content)
+// end -->
+</SCRIPT>
+</BODY>
+</HTML>

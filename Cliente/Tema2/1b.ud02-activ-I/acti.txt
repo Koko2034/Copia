@@ -1,0 +1,81 @@
+C2. INTRODUCCIÓN AL LENGUAJE
+JAVASCRIPT -I
+Contenido
+Variables ....................................................................................................................................... 2
+Entrada de datos por teclado ......................................................................................................... 2
+Operadores .................................................................................................................................... 31. (Actividad 2.2) Palabras reservadas.
+Visita la página web http://www.ecmascript.org y consulta todas las palabras reservadas
+para las futuras versiones del estándar.
+2. (Actividad 2.3) Secuencias de escape.
+Crea un fichero HTML que permita mostrar el siguiente texto en una ventana emergente, a
+través de la función alert():
+I’m = I am
+Idon’t = I do not
+Se deben usar secuencias de escape para poder representar las comillas simples y el salto de
+línea.
+Variables
+3. (Actividad 2.4) (variables1.html). Declaración e inicialización de variables.
+Crea un fichero HTML con el siguiente código JavaScript
+<script type=”text/javascript”>
+var primer_saludo = “hola”;
+var segundo_saludo = primer_saludo;
+primer_saludo = “hello”;
+alert(segundo_saludo);
+</script>
+4. (variables2.html). Crea una página en la que se defina e inicialice una variable numérica
+donde almacenar el sueldo de un empleado, con decimales, y otra de tipo cadena de
+caracteres donde almacenará su nombre. Imprimir cada variable en una línea distinta en
+pantalla.
+Entrada de datos por teclado
+5. (bienvenida.html) Abrir un cuadro de dialogo que pida al usuario que introduzca su nombre,
+el valor introducido se asignará a una variable.
+En el cuerpo del documento debe aparecer el texto “Bienvenid@ nombre”, utiliza para ello
+la instrucción document.write concatenando el mensaje y la variable en una sola línea.
+6.
+(teclado.html) Crea una página HTML que solicite el nombre de un usuario y su edad por
+teclado. Mostrar posteriormente los datos en la página HTML.7. (tiposdatos.html). Tipos de los datos
+Crea un script con las variables que aparecen a continuación. Luego se debe mostrar en
+pantalla un mensaje por cada variable con su nombre, valor y su tipo (función typeof()).
+numEntero = 10
+numCFlotante = 3.2
+cadena = "Texto"
+booleano = true
+refObjeto = window
+8. (tiposdatos2.html). Tipos de datos II
+Como en el ejercicio anterior, pero utiliza una variable de nombre “datos”, donde se
+concatenen todos los nombres de las variables, los valores y los tipos, como separadores se
+utilizarán los caracteres de escape correspondientes a la tabulación y al salto de línea.
+Nota: Sólo debe aparecer una sentencia alert.
+La salida debe quedar así:
+Variable
+Valor
+Tipo
+numEntero
+10
+number
+numCFlotante
+3.2
+number
+cadena
+Texto
+string
+booleano
+true
+boolean
+refObjeto
+[object Window]
+object
+Operadores
+9. (Actividad 2.5) La precedencia de los operadores determina el orden en que se ejecuta una
+expresión. Realiza una búsqueda con el fin de encontrar alguna de las tablas que indiquen el
+orden de precedencia de los operadores de JavaScript.
+10. (sumayresta.html). Pide al usuario que introduzca dos números. Muestra en la página el
+resultado de sumarlos, con el siguiente formato:
+La suma de 3 y 2 es 5.
+En otra línea, haz lo mismo pero restándolos.
+11. (cuadrado.html) Solicita que se introduzca por teclado la dimensión del lado de un
+cuadrado, muestra por pantalla el perímetro del mismo.
+12. (sumayproducto.html) Escribe un programa en el que se introduzcan cuatro números,
+calcula e informa de la suma de los dos primeros y el producto del tercero y el cuarto.
+13. (compra.html) Crea una página que pida el precio de un artículo y la cantidad que lleva el
+cliente. Muestra lo que debe abonar el comprador.

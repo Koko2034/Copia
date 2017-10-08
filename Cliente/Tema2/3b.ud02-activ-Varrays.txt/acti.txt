@@ -1,0 +1,50 @@
+EJERCICIO 4.1: ORDENA
+Ordenar una matriz (array) de nombres introducidos por el usuario.
+La introducción de datos se realizará de tal forma que si se pulsa el botón
+aceptar el usuario continuará introduciendo nombres y si se pulsa cancelar se
+muestran los nombres en el orden introducido en pantalla, y seguidamente los
+nombres ordenados alfabéticamente, en la propia ventana.
+Se debe comprobar que no se introducen números y que ha sido introducido al
+menos un nombre.
+Casos especiales:
+Si se introdujese un número, una alerta nos advertirá que hemos introducido un
+número y volveremos a la pregunta. Si no se introduce nada, una alerta nos
+advertirá que no hemos introducido nada y nos saldremos del programa.
+Nota:
+Para evitar que el usuario introduzca números tendremos que comprobar que la cadena
+introducida es mayor o igual a A (mayúscula). Existen otros métodos más apropiados (como
+isNaN) que se verán más adelante.Unidad 4
+EJERCICIO 4.2: AVERIGUA EL MENÚ DEL DÍA
+El programa ha de pedir al usuario que introduzca un número de menú (entre el
+1 y el 5).
+Una vez introducido se nos mostrará de qué platos está compuesto el menú del
+día.
+Introducido el menú, aparecerán el número de menú y los platos que lo
+componen:
+OBSERVACIONES:
+Si se introduce algo que no esté entre los números 1 y 5 (por ejemplo, una
+letra) se nos mostrará una alerta y saldremos del programaNota:
+- Elige bien la estructura de control de flujo más apropiada para resolver este ejercicio
+
+Unidad 4
+EJERCICIO 4.3: BARAJA (Ejercicio con error)
+Hemos intentado hacer un script que pregunta a un usuario un palo de una
+baraja de cartas. Si el usuario contesta “oros” o “bastos” ha de aparecerle la
+alerta de “enhorabuena”. Si contesta otra cosa la alerta le dirá “has fallado”.
+El programa no funciona porque se han cometido errores ¿Puedes decir
+cuáles son?
+Indica los errores mediante comentarios en el código y corrígelos.
+ 
+<HTML>
+<HEAD><TITLE>Baraja</TITLE>
+</HEAD>
+<BODY>
+<script type="text/javascript">
+var palo=""
+palo=prompt("Elije un palo de la baraja","")
+if (palo="oros" || palo="bastos"){alert ("Enhorabuena")}
+else
+{alert ("has fallado")}
+</SCRIPT>
+</BODY>
+</HTML>
